@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+
+    {% block title %}
+    Home
+    {% endblock title %}
+
+
+{% block body %}
+
+     <br><br>
+     <a href="{% url 'admin' %}"><h3>admin</h3></a>
+    <h1>hello world from home page {# hjkdshgsjhgjshgj#}</h1>
+
+      
+<ul>
+    {% for x in users %}
+     
+ <li><a href="{% url 'details' x.id %}"  >
+   
+
+
+    {{ forloop.counter}}
+    {{ x.firstname  }} {{ x.lastname }}</a></li>
+    {% endfor %}
+  </ul>
+
+
+<hr>
+  {% include "x.html"  with me='page' %}
+
+
+
+
+
+
+
+{% endblock body %}
+
+

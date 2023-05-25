@@ -1,0 +1,7 @@
+asgiref==3.7.1
+Django==4.2.1
+django-shortcuts==1.6
+sqlparse==0.4.4
+typing_extensions==4.6.2
+tzdata==2023.3
+whitenoise==6.4.0
